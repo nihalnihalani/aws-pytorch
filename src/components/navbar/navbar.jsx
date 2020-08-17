@@ -35,10 +35,7 @@ const Navbar = () =>{
     return(
         <AppBar>
             <Toolbar>
-                <Typography variant="h5" component="h2">
-                    Ai-radiology
-                </Typography>
-
+           
                 <Grid container alignItems="flex-start" justify="flex-end"  direction="row">
                     <ButtonGroup  variant="contained" color="paper" aria-label="contained primary button group">
                         <Button >Home</Button>
