@@ -1,14 +1,18 @@
-import React, { Component } from 'react'
-import  Navbar from './components/navbar/menu';
-import Homepage from './pages/home.component';
+import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
+import  Navbar from './components/navbar/navbar';
+import Homepage from './pages/homepage/home.component';
 
 
 class App extends Component{
   render(){
     return(
-      <div className='App'>
+      <div>
         <Navbar/>
-        <Homepage/>
+        {/* <Route exact path='/'  component={Homepage} /> */}
+
+        
+        {/* <Homepage/> */}
       </div>
     );
   }
