@@ -1,5 +1,24 @@
 # aws-data-sets
-Here are two data sets that we can use in our project. One is tracking the number of confirmed cases, deaths, recoveries and individuals tested for the virus, and the other includes data on numbers of licensed beds, staffed beds, ICU beds, and the bed utilization rate for the hospitals in the United States.
+Data from aws data exchange:
+Global Coronavirus (COVID-19) Data provided by Enigma
 
-# Usage
-We can use these data sets to show that the situation of covid is urgent, so we want to develop a tool to help doctors diagnose covid19 and distinguish between covid and other diseases such as pneumonia, breast cancer, or brain tumor based on x-ray images.
+# Why we are doing this
+Covid-19 is killing a lot of people, as in the table below
+
+### Covid19 cases for top 10 countries (to date 08-12-2020)
+United States     5172216
+Brazil            3164785
+India             2329638
+Russia             895691
+South Africa       566109
+Mexico             492522
+Peru               489680
+Colombia           410453
+Chile              376616
+Iran               331189
+
+More importantly, the infecting curve is not flattening even after half a year, so we need to prepare for fighting with it for a long time. Hospitals would not be able to focus on this single disease, instead covid19 patients will be mixed with patients with all kinds of diseases. So it would be helpful to have a tool that distinguishes covid19 from other diseases. Given that one important step for covid19 diagnosis is x-ray scan, we developed a model that distinguishes different diseases including covid19, pneumonia, breast cancer, and brain tumor. (more can be integrated in future) We believe this tool can help doctors diagnose covid19 and other diseases from x-ray scans in seconds.
+
+![image](https://github.com/nihalnihalani/aws-pytorch/blob/aws_data/aws_data/top5.png)
+![image](https://github.com/nihalnihalani/aws-pytorch/blob/aws_data/aws_data/world.png)
+
