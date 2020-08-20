@@ -32,7 +32,8 @@ The death rate in US has been decreasing for decades, as shown below. The death 
 Comparing with one of the most common death causes, Motor Vehicle Occupant Death rate. From the aws data we calculated the death rate was 8 per 100,000, which means that car accidents only kills 1/7 of the killing of covid 19. 
 
 ## from data 4
-Due to the covid19 pandemic, the hospital beds in USA is in shortage. Below shows the occupation rate for hospitals in all around USA. Interestingly there are still a lot empty beds to use. We are developing this tool to distinguish between covid19 and other diseases to help doctor better manage the use of beds. 
+Due to the covid19 pandemic, the hospital beds in USA is in shortage. Below shows the occupation rate for hospitals in all around USA. Interestingly, although many hospitals are somehow in shortage, there are still a lot empty beds to use. We are developing this tool to distinguish between covid19 and other diseases to help doctor better manage the use of beds. 
+
 ![image](https://github.com/nihalnihalani/aws-pytorch/blob/aws_data/aws_data/bed.png)
 
 
