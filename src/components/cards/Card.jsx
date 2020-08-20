@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme)=>({
     const classes = useStyles();
   
     return (
+    <Box >
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -46,5 +48,6 @@ const useStyles = makeStyles((theme)=>({
             </Button>
           </CardActions>
         </Card>
+      </Box>
     );
   }
