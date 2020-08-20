@@ -6,10 +6,11 @@ import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
     button:{
-        justifyContent:"flex-end"
+        
         },
     appbar:{
         backgroundColor:'purple',
+        marginTop:0
     }
 }))
 
