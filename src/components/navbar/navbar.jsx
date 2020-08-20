@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Button, ButtonGroup, Box, Typography } from '@material-ui/core';
-
+import {Link} from 'react-router-dom'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,9 +23,9 @@ return (
 					<Typography variant="h6">Ai-Radiology</Typography>
                     <Box className={akash.button}>
                     <ButtonGroup variant='contained'>
-                        <Button>Home</Button>
-                        <Button>About</Button>
-                        <Button>Team</Button>
+                        <Button component={Link} to="/">Home</Button>
+                        <Button component={Link} to="/about">About</Button>
+                        <Button component={Link} to="/team">Team</Button>
                     </ButtonGroup>
                     </Box>
                 </Toolbar>
