@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/navbar/navbar';
-import MediaCard from './components/cards/Card';
+import Navbar from '../components/navbar/navbar';
+import MediaCard from '../components/cards/Card';
 import { Grid } from '@material-ui/core';
 
 export default function Homepage() {

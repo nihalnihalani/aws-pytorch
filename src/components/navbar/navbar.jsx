@@ -1,19 +1,21 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Button, ButtonGroup, Box, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Button,  Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import Introduction from '../../pages/Introduction';
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
-		backgroundColor:'purple',
+		backgroundColor:'lightblue',
 		flexGrow: 1
 	},
 	title: {
-		flexGrow: 1
+		flexGrow: 1,
+	
 	},
 	button:{
 		padding:6,
-		color:'inherit',
+		color:'secondary',
 		variant:'contained'
 	}
 }));
@@ -25,10 +27,10 @@ export default function Navbar() {
 			<AppBar className={akash.appbar} position="static">
 				<Toolbar>
 					<Typography className={akash.title} variant="h4">
-						Ai-Radiology
+						<Link to={"/"} >Ai-Radiology</Link>
 					</Typography>
 
-					<Button className={akash.button}  component={Link} to="/">
+					<Button className={akash.button}  component={Link} to="/homepage">
 						Home
 					</Button>
 					<Button className={akash.button}  component={Link} to="/about">
