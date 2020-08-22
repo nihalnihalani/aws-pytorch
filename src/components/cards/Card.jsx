@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Input } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme)=>({
   
   export default function MediaCard({title, image, content}) {
     const classes = useStyles();
-  
+    
     return (
     <Box >
       <Card className={classes.root}>
@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme)=>({
         </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
+              
               Predict
             </Button>
           </CardActions>

@@ -5,30 +5,36 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
-		backgroundColor: 'purple'
+		backgroundColor: 'purple',
+		flexGrow: 1
+	},
+	title: {
+		flexGrow: 1
+	},
+	button:{
+		padding:1
 	}
 }));
 
 export default function Navbar() {
 	const akash = useStyles();
 	return (
-		<div>
-			<AppBar className={akash.appbar} position="static">
-				<Toolbar >
-					<Typography variant="h6">Ai-Radiology</Typography>
-                    <Box  marginLeft={140}>
-					<ButtonGroup  variant="contained">
-						<Button component={Link} to="/">
-							Home
-						</Button>
-						<Button component={Link} to="/about">
-							About
-						</Button>
-						<Button component={Link} to="/team">
-							Team
-						</Button>
-					</ButtonGroup>
-                    </Box>
+		<div className={akash.appbar}>
+			<AppBar position="static">
+				<Toolbar>
+					<Typography className={akash.title} variant="h6">
+						Ai-Radiology
+					</Typography>
+
+					<Button variant='contained' component={Link} to="/">
+						Home
+					</Button>
+					<Button variant='contained' component={Link} to="/about">
+						About
+					</Button>
+					<Button variant='contained' component={Link} to="/team">
+						Team
+					</Button>
 				</Toolbar>
 			</AppBar>
 		</div>
