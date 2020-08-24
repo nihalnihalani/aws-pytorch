@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme)=>({
       height: 140,
     },
     box:{
-     backgroundColor:'#bbdefb' 
+     margin:6
     }
 
   }));
