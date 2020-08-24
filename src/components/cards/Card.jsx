@@ -17,8 +17,13 @@ const useStyles = makeStyles((theme)=>({
     media: {
       height: 140,
     },
+    box:{
+     backgroundColor:'#bbdefb' 
+    }
 
   }));
+
+
 
 
   
@@ -26,7 +31,7 @@ const useStyles = makeStyles((theme)=>({
     const classes = useStyles();
     
     return (
-    <Box >
+    <div className={classes.box }>
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -49,6 +54,6 @@ const useStyles = makeStyles((theme)=>({
             </Button>
           </CardActions>
         </Card>
-      </Box>
+      </div>
     );
   }
